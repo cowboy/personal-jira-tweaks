@@ -1,0 +1,4 @@
+/* Make "Acceptance Criteria" custom field take 100% of the available space */
+#details-module #customfield_10010-val {
+  max-width: 100%;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Personal JIRA tweaks",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension is specific to my workplace's JIRA and will most likely not work for you",
+  "homepage_url": "https://github.com/cowboy/personal-jira-tweaks",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at" : "document_start",
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "css": [
+        "css/inject.css"
+      ]
+    }
+  ]
+}
